@@ -1,0 +1,60 @@
+{
+  "name": "wearerequired/traduttore-registry",
+  "type": "library",
+  "description": "Allows loading translation files from a custom GlotPress site running Traduttore",
+  "homepage": "https://github.com/wearerequired/traduttore-registry",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "required",
+      "email": "support@required.ch",
+      "homepage": "https://required.com",
+      "role": "Company"
+    },
+    {
+      "name": "Dominik Schilling",
+      "email": "dominik@required.ch",
+      "role": "Developer"
+    },
+    {
+      "name": "Pascal Birchler",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "glotpress",
+    "translations"
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+    "phpunit/phpunit": "^7.5.13",
+    "wearerequired/coding-standards": "^1.0"
+  },
+  "scripts": {
+    "format": "vendor/bin/phpcbf --standard=phpcs.xml.dist --report-summary --report-source",
+    "lint": "vendor/bin/phpcs --standard=phpcs.xml.dist --report-summary --report-source",
+    "test": "vendor/bin/phpunit"
+  },
+  "autoload": {
+    "files": [
+      "inc/namespace.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Required\\Traduttore_Registry\\Tests\\": "tests/phpunit/tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.x-dev"
+    }
+  }
+}

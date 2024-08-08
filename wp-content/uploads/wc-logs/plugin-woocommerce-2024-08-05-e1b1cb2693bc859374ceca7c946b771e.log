@@ -1,0 +1,4 @@
+2024-08-05T09:42:11+00:00 INFO Payment gateway enabled: "Alipay"
+2024-08-05T09:42:19+00:00 INFO Payment gateway enabled: "iDEAL"
+2024-08-05T09:43:29+00:00 INFO Payment gateway enabled: "Cash on delivery"
+2024-08-05T09:43:36+00:00 INFO Payment gateway enabled: "Direct bank transfer"
